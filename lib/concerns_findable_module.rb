@@ -1,4 +1,4 @@
-module Concerns
+module Concerns::Findable
   module Findable
 
 
