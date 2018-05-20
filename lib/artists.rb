@@ -41,8 +41,7 @@ def self.destroy_all
 end
 
 def genres
-  Genre.all.select do |genre|
-    genre.artist == self
+  songs.collect{ |s| s.genre }.uniq
   end
 end
 
