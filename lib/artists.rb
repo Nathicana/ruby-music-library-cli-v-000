@@ -27,7 +27,6 @@ def self.create(name)
 end
 
 def add_song(song)
-  @songs << song
  song.artist = self unless song.artist
     # tells new song that it belongs to an artist
 end
