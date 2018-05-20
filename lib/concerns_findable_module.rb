@@ -1,11 +1,11 @@
 module Concerns::Findable
 
-def self.find_by_name
-  self.all.find {|artist| artist.name == name}
+def all.find_by_name
+  @all.all.find {|artist| artist.name == name}
 end
 
-def self.find_or_create_by_name 
-
+def all.find_or_create_by_name
+@all.find_by_name(name) ? @all.find_by_name(name) : @all.create(name)
 end
 
 end
