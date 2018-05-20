@@ -49,7 +49,6 @@ end
 
 def artist=(artist)
   @artist = artist
-  if !artist.songs.include?(self)
     artist.add_song(self)
   end
 end
