@@ -54,7 +54,7 @@ def artist=(artist)
   end
 end
 
-def genre = genre
+def genre=(genre)
   @genre = genre
   if !genre.songs.include?(self)
     genre.add_song(self)
