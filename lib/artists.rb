@@ -28,7 +28,7 @@ end
 
 def add_song(song)
   @songs << song
- song.artist << self unless song.artist.include?(self)
+ song.artist = self unless song.artist.include?(self)
     # tells new song that it belongs to an artist
 end
 
