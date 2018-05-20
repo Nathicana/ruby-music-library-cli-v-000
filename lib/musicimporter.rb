@@ -1,10 +1,13 @@
 class MusicImporter
+ attr_accessor :path
+
+
   def self.import(list_of_filenames)
     list_of_filenames.each{ |filename| Song.create_from_filename(filename) }
   end
 
-def files 
-  @files = files 
+def files
+  @files = files
 end
 
   def initialize()
