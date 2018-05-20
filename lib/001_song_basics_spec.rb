@@ -35,6 +35,9 @@ artist_name, song_name, genre_name = parts[0], parts[1], parts[2].gsub(".mp3", "
     new(song_name, artist, genre)
 end
 
+def self.create_from_filename(filename)
+  
+
 def self.all
   @@all
 end
