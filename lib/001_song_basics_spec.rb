@@ -1,6 +1,6 @@
 class Song
 
-  
+
 
   attr_accessor :name, :artist, :genre
 
@@ -27,7 +27,7 @@ end
 
 def self.new_from_filename(filename)
   song = self.new
-  song.title = filename.split(" - ")[1]
+  parts = filename.split(" - ")[1]
   song
 end
 
